@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="Create"
+        options={{
+          title: 'Create',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'create' : 'create-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
